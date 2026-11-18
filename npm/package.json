@@ -1,6 +1,6 @@
 {
   "name": "keykosh",
-  "version": "0.2.1",
+  "version": "0.0.0",
   "description": "Keep your keys in a folder, sealed with one passphrase, so the folder can live in a private git repo",
   "bin": {
     "keykosh": "run.js"

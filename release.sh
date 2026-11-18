@@ -23,3 +23,6 @@ amarit release -version "$VERSION" -dist "$DIST" -out "$DIST/releases.json"
 awk -v v="## $VERSION" '$0 == v {on = 1; next} /^## / {on = 0} on' CHANGELOG.md > "$NOTES"
 gh release create "$VERSION" "$DIST"/* --title "$VERSION" --notes-file "$NOTES"
 rm -f "$NOTES"
+
+# npm: the same release as an npm package (asks for 2FA in the browser).
+npm/publish.sh "$VERSION"
