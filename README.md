@@ -8,6 +8,8 @@ you clone it, type the passphrase, and every key is back where it was.
 curl -fsSL https://raw.githubusercontent.com/sudiptadeb/keykosh/main/install.sh | sh
 ```
 
+Or with npm: `npm install -g keykosh`.
+
 ## Quick start
 
 ```sh

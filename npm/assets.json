@@ -1,0 +1,21 @@
+{
+  "version": "0.2.1",
+  "assets": {
+    "darwin/amd64": {
+      "url": "https://github.com/sudiptadeb/keykosh/releases/download/v0.2.1/keykosh-darwin-amd64",
+      "sha256": "573ac60860523bb531bce110002aa658ba472bf6f9ea7205ab58c0d0e2a4178a"
+    },
+    "darwin/arm64": {
+      "url": "https://github.com/sudiptadeb/keykosh/releases/download/v0.2.1/keykosh-darwin-arm64",
+      "sha256": "0da2ad2807a9c5466ee75dbef03b7343c75dd97444de8d4276c2be8968a1d8d6"
+    },
+    "linux/amd64": {
+      "url": "https://github.com/sudiptadeb/keykosh/releases/download/v0.2.1/keykosh-linux-amd64",
+      "sha256": "1320ebccd975447d639e7191f6649e912c6e1feaf04db0a1e02adc6284e0fc2e"
+    },
+    "linux/arm64": {
+      "url": "https://github.com/sudiptadeb/keykosh/releases/download/v0.2.1/keykosh-linux-arm64",
+      "sha256": "8fc8c038e88e2865a9a2891e1ce8fcb976dfdf30a0182681c800b9a99c44f7e8"
+    }
+  }
+}
