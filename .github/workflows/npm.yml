@@ -1,0 +1,26 @@
+name: npm
+
+# A published GitHub release goes out as the npm package too, from this workflow as the
+# package's trusted publisher, so no npm token is stored. Run it by hand to publish a version again.
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Release tag, e.g. v1.2.3'
+        required: true
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  npm:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: npm/publish.sh "${{ inputs.version || github.event.release.tag_name }}"

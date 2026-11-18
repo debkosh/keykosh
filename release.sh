@@ -1,7 +1,7 @@
 #!/bin/sh
 # Cut a release: build every target with the version and amarit.json stamped
 # in, write SHA256SUMS and releases.json, and publish them as a GitHub
-# release. The manifest carries earlier releases over from the last one.
+# release; .github/workflows/npm.yml then publishes the npm package. The manifest carries earlier releases over from the last one.
 #
 #   ./release.sh v0.1.0
 set -eu
@@ -23,6 +23,3 @@ amarit release -version "$VERSION" -dist "$DIST" -out "$DIST/releases.json"
 awk -v v="## $VERSION" '$0 == v {on = 1; next} /^## / {on = 0} on' CHANGELOG.md > "$NOTES"
 gh release create "$VERSION" "$DIST"/* --title "$VERSION" --notes-file "$NOTES"
 rm -f "$NOTES"
-
-# npm: the same release as an npm package (asks for 2FA in the browser).
-npm/publish.sh "$VERSION"
