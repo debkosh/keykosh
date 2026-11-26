@@ -3,7 +3,7 @@
 import { createHash } from 'node:crypto';
 import { readFileSync, writeFileSync } from 'node:fs';
 
-const repo = 'sudiptadeb/keykosh';
+const repo = 'debkosh/keykosh';
 const platforms = ['darwin/amd64', 'darwin/arm64', 'linux/amd64', 'linux/arm64'];
 const assetName = (os, arch, v) => `keykosh-${os}-${arch}`;
 

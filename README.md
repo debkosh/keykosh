@@ -5,7 +5,7 @@ passphrase, so the folder can live in a private git repo. On a new machine
 you clone it, type the passphrase, and every key is back where it was.
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/sudiptadeb/keykosh/main/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/debkosh/keykosh/main/install.sh | sh
 ```
 
 Or with npm: `npm install -g keykosh`.
@@ -177,7 +177,7 @@ The check gives up after 3 seconds, and its result is cached in
 `~/.keykosh/latest`.
 
 `keykosh update` moves to the latest release through
-[amarit](https://github.com/sudiptadeb/amarit), verifying the download and
+[amarit](https://github.com/debkosh/amarit), verifying the download and
 rolling back if the new binary does not start.
 
 ## Releasing

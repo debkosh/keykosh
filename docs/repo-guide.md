@@ -2,7 +2,7 @@
 
 This repo's signing keys and secrets are moving into a **kosh**: a folder of
 keys sealed with one passphrase, kept in its own private git repo by
-[keykosh](https://github.com/sudiptadeb/keykosh). `KEYKOSH_ROOT` points at
+[keykosh](https://github.com/debkosh/keykosh). `KEYKOSH_ROOT` points at
 the kosh, and on this machine it is unlocked: each plain key sits next to its
 sealed `<name>.age` copy.
 

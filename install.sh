@@ -1,14 +1,14 @@
 #!/bin/sh
 # Install the keykosh binary from a GitHub release.
 #
-#   curl -fsSL https://raw.githubusercontent.com/sudiptadeb/keykosh/main/install.sh | sh
+#   curl -fsSL https://raw.githubusercontent.com/debkosh/keykosh/main/install.sh | sh
 #
 # KEYKOSH_VERSION=v0.1.0 pins a release (default: the latest).
 # KEYKOSH_INSTALL_DIR=/some/bin picks the directory (default: /usr/local/bin
 # when writable, else ~/.local/bin).
 set -eu
 
-REPO=sudiptadeb/keykosh
+REPO=debkosh/keykosh
 VERSION=${KEYKOSH_VERSION:-latest}
 
 say() { printf 'keykosh: %s\n' "$*" >&2; }
