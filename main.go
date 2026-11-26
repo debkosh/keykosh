@@ -39,7 +39,7 @@ Which kosh: -C <dir>, else this folder if it has .kosh/, else $KEYKOSH_ROOT.
 The passphrase is read from the terminal, or from the first line of stdin
 when stdin is not a terminal.
 
-Learn more: https://github.com/sudiptadeb/keykosh
+Learn more: https://github.com/debkosh/keykosh
 `
 
 type flags struct {

@@ -12,7 +12,7 @@ import (
 	"golang.org/x/term"
 )
 
-const projectURL = "https://github.com/sudiptadeb/keykosh"
+const projectURL = "https://github.com/debkosh/keykosh"
 
 // repoGuide is docs/repo-guide.md: what a coding agent needs to move a
 // repo's keys into a kosh. keykosh prompt prints it with the kosh and the

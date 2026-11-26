@@ -1,4 +1,4 @@
-module github.com/sudiptadeb/keykosh
+module github.com/debkosh/keykosh
 
 go 1.26.5
 
